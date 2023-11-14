@@ -11,42 +11,55 @@
     font-family: Arial, Helvetica, sans-serif;
     color:antiquewhite;
     opacity: 75%;
-    font-size: 1.0rem;
+    font-size: 1.5rem;
   }
 
   .description_title {
     color: antiquewhite;
     text-align: left;
-    margin: 0px;
+    margin: 0.5%;
     font-size: clamp(40px, 8vw, 80px);
   }
 
   .description {
+    margin-top: 3%;
     line-height: 1.5;
-    font-size: 1.0rem;
+    font-size: 1.2rem;
     text-align: left;
     width: 70%;
     min-width: 20%;
   }
 
   .main {
-    padding: 5rem 0;
+    padding: 3rem 0;
     flex: 1;
     display: flex;
     flex-direction: column;
   }
 
   .nav {
-    border-style: groove;
-    position:absolute;
-    top: 50px;
+    overflow: hidden;
+    position: absolute;
     right: 0px;
   }
 
-  .nav li{
-    position: relative;
-    display: inline;
-    margin: 0px 5px;
+  .nav a {
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+  }
+
+  .nav a:hover {
+    background-color: rgb(249, 225, 195);
+    color: black;
+  }
+
+  .nav a_active {
+    background-color: rgb(249, 225, 195);
+    color: black;
   }
   
   .title a {
@@ -102,8 +115,8 @@
   .card:hover,
   .card:focus,
   .card:active {
-    color: #0070f3;
-    border-color: #0070f3;
+    color: rgb(249, 225, 195);
+    border-color: rgb(249, 225, 195);
   }
   
   .card h3 {
